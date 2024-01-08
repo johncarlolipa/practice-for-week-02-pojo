@@ -22,11 +22,7 @@ keyInObjectArray(objArray, 'animal'); // => false
 function keyInObjectArray(objArray, keyString) {
   // Your code here
 
-  if(Object.keys(obj).includes(keyString)){
-    return true
-  } else {
-    return false
-  }
+  return objArray.some((obj) => Object.keys(obj).includes(keyString))
 
 }
 
